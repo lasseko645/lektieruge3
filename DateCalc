@@ -1,0 +1,28 @@
+package com.company;
+
+public class DateCalc {
+
+    public static void main(String[] args) {
+
+        //Date class der er tilgængelig i java.
+        java.util.Date date = new java.util.Date();
+
+        //Hvor lang tid er der gået ud fra de forskellige tider som er gået.
+        System.out.println("Dato og tid for tid gået ved 10000, " +
+                "\n 100000, 1000000, 10000000, 100000000," +
+                "\n 1000000000, 10000000000, 100000000000");
+
+
+
+
+
+        // i have to say i had to read up on what a for loop was but then it was pretty simple
+        for     // ther for loop start her
+                (long i = 10000;        // here i set the control variable
+                i <= 1e11;              // here i set the loop continuation condition
+                i *= 10) {              // here i set that after each iteration the control variable will times itself with 10
+            date.setTime(i);            // this initially caused me issues because i didt think about using a "for-loop" for this task but the date.settime is set as an interger witch was not la big enough posible number for the task, but here im setting it to our current controll vartiable witch is a long variable witch works fine
+            System.out.println(date.toString()); // here i state that each iteration has to print out it current value stored in the control variable
+        }
+    }
+}
