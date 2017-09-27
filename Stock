@@ -1,0 +1,23 @@
+public class Stock {
+// this is our datafield
+String stockSymbol;
+String stockName;
+double previousClosingPrice;
+double currentPrice;
+
+Stock (String newStockName,String newStockSymbol){
+    stockName = newStockName;
+    stockSymbol = newStockSymbol;
+
+}
+
+double getChangePercent(){
+   return (previousClosingPrice - currentPrice) / ((previousClosingPrice+ currentPrice) / 2) * 100;
+}
+
+// here i tried to make a method i could call to print the value of getchangepercent, but i realized that its technically not defined yet
+//String getPercentChange(){
+
+    //System.out.println("the stock change for " + stockName + "(" + stockSymbol + ") is" + getChangePercent);
+//}
+}
