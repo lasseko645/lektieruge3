@@ -1,0 +1,17 @@
+public class RectangleCalc {
+    public static void main(String[] args) {
+    // dette var en test rectangle jeg laved under programmeringen
+        //Rectangle rectangle1 = new Rectangle();
+        //System.out.println("the area of a rectangle with a height of " + rectangle1.height + " and the width of " + rectangle1.width + " is " + rectangle1.getArea() );
+        //System.out.println("the perimeter of this circle is " + rectangle1.getPerimeter());
+
+        // the first rectangle
+        Rectangle rectangle2 = new Rectangle(40,4);
+        System.out.println("the area of a rectangle with a height of " + rectangle2.height + " and the width of " + rectangle2.width + " is " + rectangle2.getArea() );
+        System.out.println("the perimeter of this circle is " + rectangle2.getPerimeter());
+        // the second rectangle
+        Rectangle rectangle3 = new Rectangle(35.9,3.5);
+        System.out.println("the area of a rectangle with a height of " + rectangle3.height + " and the width of " + rectangle3.width + " is " + rectangle3.getArea() );
+        System.out.println("the perimeter of this circle is " + rectangle3.getPerimeter());
+    }
+}
