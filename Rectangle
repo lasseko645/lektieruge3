@@ -1,0 +1,27 @@
+public class Rectangle {
+    // this is our data field
+    double height = 1;
+    double width = 1;
+
+    // here is the first constructor that has no values (so it set default)
+
+    // i made this during testing just so that i had a way to get default rectangles in the program(also i think it was part of the task ???)
+    Rectangle (){
+    }
+
+    //here is our constructor with a specified value
+    Rectangle (double newHeight, double newWidth ){
+        height = newHeight;
+        width = newWidth;
+
+    }
+    // this is the the method used to describe the getArea variable
+    double getArea(){
+        return height * width;
+    }
+    // this is the method used to define the getPerimeter variable
+    double getPerimeter(){
+        return height * 2 + width * 2;
+    }
+    
+}
