@@ -1,0 +1,11 @@
+public class StockLog {
+    public static void main(String[] args) {
+
+        Stock stock1 = new Stock("OracleCorporation" , "ORCL");
+
+        stock1.previousClosingPrice = 34.5;
+        stock1.currentPrice = 34.35;
+
+        System.out.println("the stock change for " + stock1.stockName + "(" + stock1.stockSymbol + ") is " + stock1.getChangePercent());
+    }
+}
